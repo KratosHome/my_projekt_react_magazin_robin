@@ -1,0 +1,31 @@
+.slider {
+  height: auto;
+  background: url(../../../components/Cart/baners/banner-bubble-wafflee.jpg)
+    no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+/* tablet */
+@media (min-width: 768px) {
+  .slider {
+    height: 500px;
+  }
+}
+/* leptop */
+@media (min-width: 1024px) {
+  .slider {
+    height: 420px;
+  }
+}
+/* desctop */
+@media (min-width: 1440px) {
+  .slider {
+    height: 600px;
+  }
+}
+/* only mobile*/
+@media (max-width: 550px) {
+  .slider {
+    height: 160px;
+  }
+}

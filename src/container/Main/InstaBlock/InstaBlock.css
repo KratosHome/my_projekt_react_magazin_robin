@@ -1,0 +1,80 @@
+.inst_name {
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 41.7px;
+  line-height: 41px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #bc9263;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.instagram {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.instagram_one a,
+.instagram_two a,
+.instagram_three a {
+  display: block;
+  margin: 10px;
+  width: 310px;
+  height: 310px;
+  background-size: cover;
+  border-radius: 8px;
+}
+.instagram_one a {
+  background: url(../../../components/Cart/baners/instagram/robbin_bobbin_vaffe.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.instagram_two a {
+  background: url(../../../components/Cart/baners/instagram/instagram_wafl.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.instagram_three a {
+  background: url(../../../components/Cart/baners/instagram/banana_wafl.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.instagram_one a:hover,
+.instagram_three a:hover,
+.instagram_two a:hover {
+  cursor: pointer;
+  transition: 500ms;
+  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
+  border-radius: 8px;
+  transform: scale(1.03);
+}
+/* tablet */
+@media (min-width: 768px) {
+  .instagram_one a,
+  .instagram_two a,
+  .instagram_three a {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* leptop */
+@media (min-width: 1024px) {
+  .instagram_one a,
+  .instagram_two a,
+  .instagram_three a {
+    width: 293px;
+    height: 293px;
+  }
+}
+/* desctop */
+@media (min-width: 1440px) {
+  .instagram_one a,
+  .instagram_two a,
+  .instagram_three a {
+    width: 393px;
+    height: 393px;
+  }
+}

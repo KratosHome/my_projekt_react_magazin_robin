@@ -1,0 +1,83 @@
+.header {
+  margin-top: 15px;
+}
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 23.3px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #bc9263;
+}
+.logo {
+  cursor: pointer;
+}
+.contact img {
+  margin-left: 10px;
+}
+.contact_block {
+  margin-left: 5px;
+}
+.opening_hours {
+  text-align: end;
+}
+.telphone a {
+  text-decoration: none;
+  color: #bc9263;
+}
+.contact .telphone_number {
+  font-size: 32.6px;
+}
+.like_basket {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 9px;
+  margin-right: -40px;
+}
+/* omly tablet */
+@media (max-width: 768px) {
+  .logo img {
+    margin-top: 10px;
+    content: url(../../components/Cart/page_img/logo_mob_smoll.png);
+  }
+}
+/* only mobile*/
+@media (max-width: 550px) {
+  .logo img {
+    margin-top: 10px;
+    content: url(../../components/Cart/page_img/logo_mob_smoll.png);
+  }
+  .contact {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 19.3px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  .contact .telphone_number {
+    font-size: 20.3px;
+  }
+  .contact_block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img_phone {
+    display: none;
+  }
+  .opening_hours,
+  .telphone {
+    margin-top: -15px;
+    margin-left: 5px;
+    margin-right: 12px;
+  }
+  .like_basket {
+    margin-right: 155px;
+  }
+  .basket img,
+  .like img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}

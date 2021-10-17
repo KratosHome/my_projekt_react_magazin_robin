@@ -1,0 +1,86 @@
+.slider_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+.slider_main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slider_main_one {
+  margin: 10px;
+  width: 300px;
+  height: 220px;
+  background: url(../../../components/Cart/baners/banner_Lavazza.jpg) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.slider_main_two {
+  margin: 10px;
+  width: 300px;
+  height: 120px;
+  background: url(../../../components/Cart/baners/baner_wafl.jpg) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.slider_main_three {
+  margin: 10px;
+  width: 300px;
+  height: 120px;
+  background: url(../../../components/Cart/baners/banne_salat.jpg) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+}
+[class*="slider_main_"]:hover {
+  transition: 500ms;
+  cursor: pointer;
+  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
+  border-radius: 8px;
+  transform: scale(1.03);
+}
+/* tablet */
+@media (min-width: 768px) {
+  .slider_main_one {
+    width: 300px;
+    height: 270px;
+    background-size: cover;
+  }
+  .slider_main_two {
+    width: 390px;
+    height: 120px;
+  }
+  .slider_main_three {
+    width: 390px;
+    height: 120px;
+  }
+}
+
+/* leptop */
+@media (min-width: 1024px) {
+  .slider_main_one {
+    width: 400px;
+  }
+  .slider_main_two {
+    width: 500px;
+  }
+  .slider_main_three {
+    width: 500px;
+  }
+}
+/* desctop */
+@media (min-width: 1440px) {
+  .slider_main_one {
+    width: 600px;
+    height: 420px;
+  }
+  .slider_main_two {
+    width: 700px;
+    height: 200px;
+  }
+  .slider_main_three {
+    width: 700px;
+    height: 200px;
+  }
+}

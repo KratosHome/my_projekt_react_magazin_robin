@@ -1,0 +1,110 @@
+.bacgtaund_img_fon {
+  position: absolute;
+  width: 425px;
+  height: 600px;
+  background: url(../../../components/Cart/page_img/bacgraunb_cafe.jpg)
+    no-repeat;
+  background-size: 425px 600px;
+  z-index: -1;
+  margin-bottom: 0;
+  background-position: 50% 50%;
+}
+.our_team_name {
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 38.7px;
+  line-height: 41px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #bc9263;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.our_team {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.team_first {
+  display: block;
+  margin: 10px;
+  width: 320px;
+  height: 260px;
+  background: url(../../../components/Cart/page_img/Anna.jpeg) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.team_two {
+  display: block;
+  margin: 10px;
+  width: 320px;
+  height: 260px;
+  background: url(../../../components/Cart/page_img/Pavel.jpeg) no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+}
+.team_first:hover,
+.team_two:hover {
+  transition: 500ms;
+  cursor: pointer;
+  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
+  border-radius: 8px;
+  transform: scale(1.03);
+}
+/* tablet */
+@media (min-width: 768px) {
+  .team_first {
+    width: 320px;
+    height: 260px;
+  }
+  .team_two {
+    width: 320px;
+    height: 260px;
+  }
+  .bacgtaund_img_fon {
+    background-size: 768px 470px;
+    width: 768px;
+    height: 470px;
+  }
+}
+
+/* leptop */
+@media (min-width: 1024px) {
+  .team_first {
+    width: 420px;
+    height: 360px;
+  }
+  .team_two {
+    width: 420px;
+    height: 360px;
+  }
+  .bacgtaund_img_fon {
+    background-size: 1240px 610px;
+    width: 1240px;
+    height: 610px;
+  }
+}
+/* desctop */
+@media (min-width: 1440px) {
+  .team_first {
+    width: 520px;
+    height: 360px;
+  }
+  .team_two {
+    width: 520px;
+    height: 360px;
+  }
+  .bacgtaund_img_fon {
+    background-size: 1450px 700px;
+    width: 1450px;
+    height: 600px;
+  }
+}
+/* only mobile*/
+@media (max-width: 550px) {
+  .bacgtaund_img_fon {
+    display: none;
+  }
+}

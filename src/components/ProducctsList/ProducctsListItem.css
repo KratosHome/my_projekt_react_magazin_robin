@@ -1,0 +1,139 @@
+.card {
+  padding: 30px;
+  margin: 10px;
+  max-width: 320px;
+  font-family: "Exo 2";
+  font-size: 15.9px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #bc9263;
+  transition: 500ms;
+}
+.card_categori {
+  margin: 0 auto;
+  width: 138px;
+  height: 20px;
+  text-align: center;
+  background-color: rgb(49%, 37%, 25%, 0.7);
+  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
+  border-radius: 8px;
+  font-size: 14.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 500ms;
+}
+.card_img {
+  margin: 0 auto;
+}
+.card_img img {
+  width: 280px;
+  height: 280px;
+}
+
+.card_like {
+  width: 50px;
+  margin: 0px 0px 0px 250px;
+  height: 30px;
+  background: url(../../components/Cart/page_img/like.png) no-repeat;
+  background-size: contain;
+  align-content: space-between;
+  transition: 500ms;
+}
+.card_like:hover {
+  background: url(../../components/Cart/page_img/like_hoveer.png) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.card_name {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.card_prise {
+  margin: 20px 0px 0px 0px;
+  font-size: 32.7px;
+  text-align: center;
+}
+.card_content {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  transform-origin: top;
+  transition: 500ms;
+  min-height: 50px;
+  max-height: 50px;
+}
+.card_buttom {
+  margin: auto;
+  display: block;
+  width: 186px;
+  height: 55px;
+  border: none;
+  background-color: rgba(49, 25, 0, 0.7);
+  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
+  border-radius: 8px;
+  font-family: "Exo 2";
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.card_buttom:hover,
+.card_categori:hover {
+  box-shadow: 0px 0px 0px 0px rgba(254, 254, 254, 0.44);
+  background-color: white;
+  color: #7c5f41;
+  border: 1px solid rgba(49, 25, 0, 0.7);
+}
+
+.card:hover .card_buttom {
+  transform: translate(1px, 10%);
+}
+.card:hover .card_content {
+  transform: scaleY(1);
+}
+.card:hover {
+  border: 1px solid white;
+  transform: scale(1.03);
+  background-color: rgba(46, 34, 25, 1);
+}
+@media (hover) {
+  .card_content {
+    transform: scaleY(0);
+  }
+  .card_buttom {
+    transition: 500ms;
+    transform: translate(1px, -60%);
+  }
+}
+
+/* leptop */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 280px;
+  }
+  .card_img {
+    margin: 0 auto;
+  }
+  .card_img img {
+    width: 240px;
+    height: 240px;
+  }
+  .card_like {
+    margin: 0px 0px 0px 200px;
+  }
+}
+/* desctop */
+@media (min-width: 1440px) {
+  .card {
+    max-width: 320px;
+  }
+  .card_img img {
+    width: 280px;
+    height: 280px;
+  }
+  .card_like {
+    margin: 0px 0px 0px 250px;
+  }
+}

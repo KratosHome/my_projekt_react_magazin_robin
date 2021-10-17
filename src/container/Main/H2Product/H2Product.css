@@ -1,0 +1,40 @@
+.H2Product {
+  text-align: center;
+  font-family: "Exo 2";
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #bc9263;
+  margin-bottom: 20px;
+}
+.H2Product h1 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.H2Product h2 {
+  margin-top: -7px;
+  font-size: 41.7px;
+  line-height: 37px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.H2Product span {
+  font-size: 20.9px;
+  line-height: 20px;
+  font-weight: 400;
+}
+/* only mobile*/
+@media (max-width: 550px) {
+  .H2Product h1 {
+    font-size: 15px;
+  }
+  .H2Product h2 {
+    margin-top: -17px;
+    font-size: 18.7px;
+    margin-bottom: -10px;
+  }
+  .H2Product span {
+    font-size: 13.9px;
+  }
+}
