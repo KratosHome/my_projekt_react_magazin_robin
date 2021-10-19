@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import ProducctsListItem from "./ProducctsListItem";
 import productsArray from "./productsArray";
 

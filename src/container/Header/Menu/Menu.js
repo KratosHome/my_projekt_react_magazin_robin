@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Menu.css";
 
 const Menu = () => {
@@ -57,19 +58,19 @@ const Menu = () => {
               </ul>
             </li>
             <li>
-              <a class="border_animation" href="">
+              <Link class="border_animation" to="/about-us">
                 про нас
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="border_animation" href="">
+              <Link class="border_animation" to="/contact">
                 контакты
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="border_animation" href="">
+              <Link class="border_animation" to="/delivery">
                 доставка
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

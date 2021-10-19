@@ -6,6 +6,7 @@ const productsArray = [
     img: "/images/wafl_colbasl.png",
     price: 69,
     content: "салями, сыр Голландский, огурец, помидор, лист салата",
+    bestListTrue: true,
   },
   {
     id: 2,
@@ -14,6 +15,16 @@ const productsArray = [
     img: "/images/WAFFLE-CHEESE.png",
     price: 99,
     content: "камамбер, куриное филе, крем сыр, помидор, груша, листья салата",
+    bestList: true,
+  },
+  {
+    id: 3,
+    category: "вафля сладкая",
+    name: "Banana-Waffle",
+    img: "/images/Banana-Waffle.png",
+    price: 69,
+    content: "Nutella, банан, сахарная пудра",
+    bestList: true,
   },
   {
     id: 3,

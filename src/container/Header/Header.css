@@ -35,6 +35,13 @@
   margin-top: 9px;
   margin-right: -40px;
 }
+.like_basket a {
+  position: relative;
+}
+.basket img,
+.like img {
+  cursor: pointer;
+}
 /* omly tablet */
 @media (max-width: 768px) {
   .logo img {
@@ -77,6 +84,7 @@
   }
   .basket img,
   .like img {
+    cursor: pointer;
     max-width: 30px;
     max-height: 30px;
   }
