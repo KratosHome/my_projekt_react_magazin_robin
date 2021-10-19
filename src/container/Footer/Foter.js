@@ -13,6 +13,7 @@ const Foter = () => {
                   <a
                     href="https://www.instagram.com/robin_bobbin_ck/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     bobin_bobbin_ck
                   </a>
@@ -26,7 +27,11 @@ const Foter = () => {
                   <a href="tel:+380689171761">+380 (68) 917 17 61 </a>
                 </div>
                 <div class="foter_adres">
-                  <a href="https://g.page/r/CSnjqs0JJCn9EAE" target="_blank">
+                  <a
+                    href="https://g.page/r/CSnjqs0JJCn9EAE"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     вул. Гоголя 262
                   </a>
                 </div>
