@@ -11,12 +11,17 @@ import BestListPage from "../../pages/BestListPage/BestListPage";
 import CartPage from "../../pages/CartPage/CartPage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 import DeliveryPage from "../../pages/DeliveryPage/DeliveeryPagee";
+import ProductsOll from "../../pages/ProductsPage/ProductsOll/ProductsOll";
 
 const Main = () => {
   return (
     <>
       <main>
         <Switch>
+          <Route path="/menu" exact>
+            <ProductsOll />
+            <OurTeam />
+          </Route>
           <Route path="/about-us" exact>
             <AboutUsPage />
             <OurTeam />

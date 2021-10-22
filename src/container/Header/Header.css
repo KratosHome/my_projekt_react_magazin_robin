@@ -26,6 +26,9 @@
   text-decoration: none;
   color: #bc9263;
 }
+.telphone a:hover {
+  color: #bc9275;
+}
 .contact .telphone_number {
   font-size: 32.6px;
 }

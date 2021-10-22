@@ -9,9 +9,9 @@ const Menu = () => {
         <nav>
           <ul class="menu">
             <li>
-              <a class="border_animation" href="">
+              <Link class="border_animation" to="/menu">
                 меню
-              </a>
+              </Link>
               <ul class="cabmenu">
                 <li>
                   <a href="">кофе</a>

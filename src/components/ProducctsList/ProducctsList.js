@@ -5,16 +5,38 @@ import productsArray from "./productsArray";
 const ProducctsList = () => {
   return (
     <>
-      {productsArray.map(({ id, category, name, img, price, content }) => (
-        <ProducctsListItem
-          key={id}
-          category={category}
-          name={name}
-          img={img}
-          price={price}
-          content={content}
-        />
-      ))}
+      {productsArray.map(
+        ({ id, category, name, img, price, content, bestListTrue }) => (
+          <ProducctsListItem
+            key={id}
+            category={category}
+            name={name}
+            img={img}
+            price={price}
+            content={content}
+            bestListTrue={bestListTrue}
+          />
+        )
+      )}
+    </>
+  );
+};
+export const ProducctsListBestList = () => {
+  return (
+    <>
+      {productsArray
+        .filter((item) => item.bestList === "bestList")
+        .map(({ id, category, name, img, price, content, bestListTrue }) => (
+          <ProducctsListItem
+            key={id}
+            category={category}
+            name={name}
+            img={img}
+            price={price}
+            content={content}
+            bestListTrue={bestListTrue}
+          />
+        ))}
     </>
   );
 };

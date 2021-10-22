@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./ProducctsListItem.css";
+import PropTypes from "prop-types";
 
 class ProducctsListItem extends Component {
   render() {
@@ -21,5 +22,14 @@ class ProducctsListItem extends Component {
     );
   }
 }
+
+ProducctsListItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  img: PropTypes.string.isRequired,
+};
+ProducctsListItem.defaultProps = {
+  img: "../images/now_imeg.png",
+};
 
 export default ProducctsListItem;

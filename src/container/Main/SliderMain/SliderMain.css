@@ -35,7 +35,6 @@
 }
 [class*="slider_main_"]:hover {
   transition: 500ms;
-  cursor: pointer;
   box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
   border-radius: 8px;
   transform: scale(1.03);
