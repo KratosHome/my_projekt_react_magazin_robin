@@ -14,46 +14,46 @@ const Menu = () => {
               </Link>
               <ul class="cabmenu">
                 <li>
-                  <a href="">кофе</a>
+                  <Link to="/coffee">кофе</Link>
                   <ul class="second">
                     <li>
-                      <a href="">арабика</a>
+                      <Link to="/coffee_arabica">арабика</Link>
                     </li>
                     <li>
-                      <a href="">купаж</a>
+                      <Link to="/coffee_blend">купаж</Link>
                     </li>
                     <li>
-                      <a href="">без-кофеина</a>
+                      <Link to="/coffee_cafein_free">без-кофеина</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="">вафли</a>
+                  <Link to="/waffles">вафли</Link>
                   <ul class="second">
                     <li>
-                      <a href="">сладкие</a>
+                      <Link to="/waffles_sweet">сладкие</Link>
                     </li>
                     <li>
-                      <a href="">соленые</a>
+                      <Link to="/waffles_salty">соленые</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="">блинчики</a>
+                  <Link to="/pancakes">блинчики</Link>
                   <ul class="second">
                     <li>
-                      <a href="">сладкие</a>
+                      <Link to="/pancakes_sweet">сладкие</Link>
                     </li>
                     <li>
-                      <a href="">соленые</a>
+                      <Link to="/pancakes_salty">соленые</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="">вкусняшки</a>
+                  <Link to="/goodies">вкусняшки</Link>
                 </li>
                 <li>
-                  <a href="">напитки</a>
+                  <Link to="/beverages">напитки</Link>
                 </li>
               </ul>
             </li>
