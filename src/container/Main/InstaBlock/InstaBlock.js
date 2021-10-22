@@ -14,21 +14,27 @@ const InstaBlock = () => {
                   href="https://www.instagram.com/p/CUC-4wAo4_S/"
                   target="_blank"
                   rel="noreferrer"
-                ></a>
+                >
+                  {" "}
+                </a>
               </div>
               <div class="instagram_two">
                 <a
                   href="https://www.instagram.com/p/CT9bh6BI8Kb/"
                   target="_blank"
                   rel="noreferrer"
-                ></a>
+                >
+                  {" "}
+                </a>
               </div>
               <div class="instagram_three">
                 <a
                   href="https://www.instagram.com/p/CT9DIPYIPdM/"
                   target="_blank"
                   rel="noreferrer"
-                ></a>
+                >
+                  {" "}
+                </a>
               </div>
             </div>
           </div>
