@@ -7,4 +7,5 @@ import productsArray, {
 const ProductPage = ({ productsObject = getProductsObject(productsArray) }) => {
   return <>Bla bla</>;
 };
+
 export default ProductPage;
