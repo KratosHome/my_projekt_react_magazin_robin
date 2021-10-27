@@ -5,7 +5,7 @@ import "./Menu.css";
 const Menu = () => {
   return (
     <>
-      <div class="col-sx-0 col-sm-6 col-md-5 col-ld-6">
+      <div class="col-sx-0 col-sm-7 col-md-5 col-ld-6">
         <nav>
           <ul class="menu">
             <li>

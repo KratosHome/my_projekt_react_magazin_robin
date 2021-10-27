@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "./Slider/Slider.js";
+import SliderHead from "./Slider/Slider.js";
 import H2Product from "./H2Product/H2Product.js";
 import BestList from "./BestList/BestList.js";
 import SliderMain from "./SliderMain/SliderMain";
@@ -12,6 +12,7 @@ import CartPage from "../../pages/CartPage/CartPage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 import DeliveryPage from "../../pages/DeliveryPage/DeliveeryPagee";
 import ProductsOll from "../../pages/ProductsPage/ProductsOll/ProductsOll";
+import ProductPage from "../../pages/ProductPage/ProductPage";
 
 const Main = () => {
   return (
@@ -43,12 +44,15 @@ const Main = () => {
             <OurTeam />
           </Route>
           <Route path="/" exact>
-            <Slider />
+            <SliderHead />
             <H2Product />
             <BestList />
             <SliderMain />
             <InstaBlock />
             <OurTeam />
+          </Route>
+          <Route path="/products/:id">
+            <ProductPage />
           </Route>
         </Switch>
       </main>

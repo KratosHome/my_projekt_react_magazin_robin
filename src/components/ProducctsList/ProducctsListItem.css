@@ -1,4 +1,5 @@
-.card {
+.card,
+.card a {
   padding: 20px;
   margin: 10px;
   max-width: 320px;
@@ -9,6 +10,7 @@
   color: #bc9263;
   transition: 500ms;
   border: 1px solid rgba(254, 254, 254, 0);
+  text-decoration: none;
 }
 .card_categori {
   margin: 0 auto;

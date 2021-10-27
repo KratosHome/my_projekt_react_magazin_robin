@@ -12,6 +12,7 @@
 }
 .logo {
   cursor: pointer;
+  padding-left: 15px;
 }
 .contact img {
   margin-left: 10px;
@@ -25,6 +26,7 @@
 .telphone a {
   text-decoration: none;
   color: #bc9263;
+  white-space: nowrap;
 }
 .telphone a:hover {
   color: #bc9275;

@@ -1,6 +1,10 @@
-.menu {
+nav {
   display: flex;
   justify-content: space-around;
+}
+.menu {
+  display: flex;
+
   margin-top: 100px;
   padding-left: 15px;
   padding-right: 15px;
@@ -150,8 +154,9 @@
     display: none;
   }
   .nav-mobile-menu {
-    top: 15px;
-    left: 20px;
+    padding-right: 15px;
+    top: 0px;
+    left: 350px;
     border: 1px solid rgba(254, 254, 254, 0.44);
     border-radius: 50%;
     display: flex;
@@ -180,5 +185,22 @@
     bottom: 9px;
     width: 15px;
     margin: 0 auto;
+  }
+}
+/* only mobile*/
+@media (max-width: 390px) {
+  .nav-mobile-menu {
+    left: 330px;
+  }
+}
+@media (max-width: 350px) {
+  .nav-mobile-menu {
+    left: 290px;
+  }
+}
+/* only mobile*/
+@media (max-width: 320px) {
+  .nav-mobile-menu {
+    left: 280px;
   }
 }

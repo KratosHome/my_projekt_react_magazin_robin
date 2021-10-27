@@ -113,4 +113,15 @@ const productsArray = [
     content: "вафля, сахарная пудра",
   },
 ];
+
+export const getProductsObject = (array) =>
+  array.reduce(
+    (objekt, product) => ({
+      ...objekt,
+      [product.id]: product,
+      [product.price]: product,
+    }),
+    {}
+  );
+
 export default productsArray;
