@@ -5,8 +5,6 @@ import productsArray, {
 } from "../../components/ProducctsList/productsArray";
 
 const ProductPage = ({ productsObject = getProductsObject(productsArray) }) => {
-  let { id } = useParams();
-
   return <>Bla bla</>;
 };
 export default ProductPage;
