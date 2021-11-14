@@ -7,6 +7,7 @@ const productsArray = [
     price: 69,
     content: "салями, сыр Голландский, огурец, помидор, лист салата",
     bestList: "bestList",
+    pageId: "salami-sandwich",
   },
   {
     id: 2,
@@ -14,8 +15,9 @@ const productsArray = [
     name: "WAFFLE CHEESE",
     img: "/images/WAFFLE-CHEESE.png",
     price: 99,
-    content: "камамбер, куриное филе, крем сыр, помидор, груша, листья салата",
+    content: " камамбер, куриное филе, крем сыр, помидор, груша, листья салата",
     bestList: "bestList",
+    pageId: "WAFFLE-CHEESE",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const productsArray = [
     img: "/images/four_cheeses.png",
     price: 59,
     content: "Сыр горгонзола, Моцарелла, Сир Голландський",
+    pageId: "four-cheeses",
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const productsArray = [
     img: "/images/Waffle_with_Salmon.png",
     price: 97,
     content: "Лосось, Огірок, Кунжут, Сырный соус, Соус унаги",
+    pageId: "Waffle-with-Salmon",
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const productsArray = [
     img: "/images/Waffle_balyk.png",
     price: 68,
     content: "Балык, Лист салату, Помидор, Огурец, Сир Голландський",
+    pageId: "Waffle-with-balyk",
   },
   {
     id: 6,
@@ -49,6 +54,7 @@ const productsArray = [
     price: 79,
     content:
       "Котлета, Сир Голландський, Лист салату, Помидо, Маринованый оргурец, Сметанный соус ",
+    pageId: "Cheeseburger",
   },
   {
     id: 7,
@@ -58,6 +64,7 @@ const productsArray = [
     price: 94,
     content:
       "Котлета, Сир Голландський, Лист салату, Помидо, Маринованый оргурец, Сметанный соус ",
+    pageId: "Double-Cheeseburger",
   },
   {
     id: 8,
@@ -67,15 +74,17 @@ const productsArray = [
     price: 69,
     content:
       "Куриное филе, Сир Голландський, Лист салату, Ананас консервированый",
+    pageId: "Chicken-sandwich",
   },
   {
     id: 9,
     category: "вафля соленая",
-    name: "Сендвич з куркою и баликом",
+    name: "Сэндвич з куркой и балыком",
     img: "/images/sandwy_hammer_balik.png",
     price: 87,
     content:
       "Куриное филе, Балик, Сир Голландський, Лист салату, Ананас консервированый",
+    pageId: "Sandwich-with-hammer-and-balyk",
   },
   {
     id: 10,
@@ -85,6 +94,7 @@ const productsArray = [
     price: 65,
     content:
       "Охотничья колбаска, Лист салата, Помидор, сир Голландський, Маринованный огурец, BBQ соус ",
+    pageId: "Waffle-Dog",
   },
   {
     id: 11,
@@ -94,6 +104,7 @@ const productsArray = [
     price: 69,
     content: "Nutella, банан, сахарная пудра",
     bestList: "bestList",
+    pageId: "Banana-Waffle",
   },
   {
     id: 12,
@@ -103,6 +114,7 @@ const productsArray = [
     price: 89,
     content: "Nutella, Snickers, Лесной орех, Печенька OREO",
     bestList: "bestList",
+    pageId: "Snickers-Waffle",
   },
   {
     id: 13,
@@ -111,6 +123,7 @@ const productsArray = [
     img: "/images/Waffl_ powdered_sugar.png",
     price: 29,
     content: "вафля, сахарная пудра",
+    pageId: "Waffle-with-powder",
   },
 ];
 
@@ -120,6 +133,7 @@ export const getProductsObject = (array) =>
       ...objekt,
       [product.id]: product,
       [product.price]: product,
+      [product.pageId]: product,
     }),
     {}
   );

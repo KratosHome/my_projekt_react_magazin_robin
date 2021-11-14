@@ -6,9 +6,11 @@ const ProducctsList = () => {
   return (
     <>
       {productsArray.map(
-        ({ id, category, name, img, price, content, bestListTrue }) => (
+        ({ id, category, name, img, price, content, bestListTrue, pageId }) => (
           <ProducctsListItem
             key={id}
+            id={id}
+            pageId={pageId}
             category={category}
             name={name}
             img={img}
@@ -26,17 +28,31 @@ export const ProducctsListBestList = () => {
     <>
       {productsArray
         .filter((item) => item.bestList === "bestList")
-        .map(({ id, category, name, img, price, content, bestListTrue }) => (
-          <ProducctsListItem
-            key={id}
-            category={category}
-            name={name}
-            img={img}
-            price={price}
-            content={content}
-            bestListTrue={bestListTrue}
-          />
-        ))}
+        .map(
+          ({
+            id,
+            category,
+            name,
+            img,
+            price,
+            content,
+            bestListTrue,
+            pageId,
+          }) => (
+            <ProducctsListItem
+              id={id}
+              key={id}
+              id={id}
+              category={category}
+              name={name}
+              img={img}
+              price={price}
+              content={content}
+              bestListTrue={bestListTrue}
+              pageId={pageId}
+            />
+          )
+        )}
     </>
   );
 };

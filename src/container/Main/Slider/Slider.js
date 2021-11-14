@@ -1,37 +1,43 @@
-import React from "react";
-import Slider from "react-touch-drag-slider";
-import "./Slider.css";
-import imagesArray from "../../../components/SliderImg/imagesArray";
+import React, { Component } from "react";
+import "swiper/swiper-bundle.css";
+import bannerBubbleWafflee from "../../../components/Cart/header_baner/banner-bubble-wafflee.jpg";
+import lavazzaSekend from "../../../components/Cart/header_baner/lavazza_sekend.jpg";
+import lavazza from "../../../components/Cart/header_baner/lavazza.jpg";
+import Slider from "react-slick";
 
-const SliderHead = () => {
-  return (
-    <>
-      <div class="conteiner">
-        <div class="row">
-          <div class="col-sx-12 col-sm-12 col-md-12 col-ld-12">
-            <div class="slide_headr">
-              <Slider
-                onSlideComplete={(i) => {
-                  console.log("finished dragging, current slide is", i);
-                }}
-                onSlideStart={(i) => {
-                  console.log("started dragging on slide", i);
-                }}
-                activeIndex={0}
-                threshHold={100}
-                transition={0.5}
-                scaleOnDrag={true}
-              >
-                {imagesArray.map(({ url, title }, id) => (
-                  <img src={url} key={id} alt={title} />
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: 2000,
+      fade: true,
+      speed: 800,
+      pauseOnHover: false,
+    };
+    return (
+      <div className="container">
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+
+        <Slider {...settings}>
+          <img src={bannerBubbleWafflee}></img>
+          <img src={lavazzaSekend}></img>
+          <img src={lavazza}></img>
+        </Slider>
       </div>
-    </>
-  );
-};
-
-export default SliderHead;
+    );
+  }
+}

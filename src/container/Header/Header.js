@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import Menu from "./Menu/Menu.js";
 import logo from "../../components/Cart/page_img/logo.png";
-import like from "../../components/Cart/page_img/like.png";
-import basket from "../../components/Cart/page_img/basket.png";
+
 import phoneIcon from "../../components/Cart/page_img/phone_icon.png";
+import CartHeader from "../../components/Cart/CartHeader";
+import LikeHeader from "../../components/LikeHeader/LikeHeader";
 
 const Header = () => {
   return (
@@ -31,16 +32,8 @@ const Header = () => {
                     </a>
                   </div>
                   <div class="like_basket">
-                    <div class="like">
-                      <Link to="/best-list">
-                        <img src={like} alt="Избранное" />
-                      </Link>
-                    </div>
-                    <div class="basket">
-                      <Link to="/cart">
-                        <img src={basket} alt="Корзина" />
-                      </Link>
-                    </div>
+                    <LikeHeader />
+                    <CartHeader />
                   </div>
                 </div>
                 <div class="img_phone">

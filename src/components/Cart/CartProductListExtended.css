@@ -1,0 +1,55 @@
+.card_Product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Exo 2";
+  font-size: 20.9px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.cart_line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+.cart_img {
+  width: 120px;
+  height: 120px;
+}
+
+.delete_buton {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.delete_icon {
+  margin-left: 3%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+@media (max-width: 1076px) {
+  .card_Product {
+    font-size: 17.9px;
+  }
+}
+@media (max-width: 548px) {
+  .card_Product {
+    font-size: 13.9px;
+  }
+  .card_checkout {
+    margin-top: 50px;
+  }
+  .cart_img {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,38 @@
+.quontity {
+  margin: 2.3%;
+}
+.quontity_input {
+  display: inline-block;
+  padding-top: 10px;
+  border: none;
+  background-color: #7c5f41;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  text-align: center;
+  color: white;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.decrement,
+.incriment {
+  margin: 5px;
+  width: 45px;
+  height: 30px;
+  border-radius: 15%;
+  border: none;
+  font-size: 25px;
+  color: rgba(43, 39, 39, 1);
+  background: linear-gradient(#bc9263, #a67c7c);
+  transition: 500ms;
+}
+.decrement:hover,
+.incriment:hover {
+  transition: 500ms;
+  background: linear-gradient(#e7af6f, #d84b4b);
+  cursor: pointer;
+}

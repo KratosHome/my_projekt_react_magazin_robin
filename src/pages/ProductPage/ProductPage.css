@@ -1,0 +1,109 @@
+.product_page_flex {
+  display: flex;
+}
+.product_page_title {
+  margin-top: 120px;
+  margin-left: 12%;
+}
+.product_page_content {
+  margin-top: 20%;
+  font-family: "Exo 2";
+  font-size: 20.9px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #bc9263;
+  max-width: 80%;
+}
+
+.h1_animation {
+  word-break: break-all;
+  fill: transparent;
+  stroke: #bc9263;
+  font-size: 90.9px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 3s infinite alternate;
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+  }
+}
+.product_page_img {
+  margin-left: 15%;
+  width: 514px;
+  height: 480px;
+}
+.product_page_ather {
+  margin-left: 65%;
+  height: 100px;
+  width: 250px;
+}
+.product_page_price {
+  margin-left: 35%;
+  font-family: "Exo 2";
+  font-size: 40.4px;
+  line-height: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #bc9263;
+  font-size: 16.7px;
+  text-transform: none;
+}
+.product_page_quontity {
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
+.product_page_button {
+  margin-left: 50%;
+  margin-top: -5%;
+  position: absolute;
+  margin-bottom: 10%;
+}
+@media (max-width: 925px) {
+  .product_page_img {
+    width: 414px;
+    height: 380px;
+  }
+  .product_page_button {
+    margin-top: -8%;
+    margin-left: 20%;
+    background-color: black;
+  }
+}
+@media (max-width: 670px) {
+  .product_page_flex {
+    flex-direction: column;
+  }
+  .product_page_title {
+    margin-top: 10px;
+  }
+  .product_page_content {
+    margin-top: 2%;
+    max-width: 100%;
+  }
+  .product_page_quontity {
+    margin-left: 20%;
+  }
+  .product_page_button {
+    margin-top: -10%;
+    margin-left: 20%;
+  }
+  .product_page_img {
+    width: 314px;
+    height: 280px;
+  }
+}
+@media (max-width: 350px) {
+  .product_page_quontity {
+    margin-left: 25%;
+  }
+  .product_page_button {
+    margin-top: -15%;
+    margin-left: 15%;
+  }
+}

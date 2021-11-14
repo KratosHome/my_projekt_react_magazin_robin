@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 
-const Menu = () => {
+const Menu = ({ menu }) => {
+  const [menuActive, setMenuActiv] = useState(false);
+
   return (
     <>
       <div class="col-sx-0 col-sm-7 col-md-5 col-ld-6">
         <nav>
-          <ul class="menu">
+          <ul className={menuActive ? "menu active-menu " : " menu"}>
             <li>
               <Link class="border_animation" to="/menu">
                 меню
@@ -74,7 +76,12 @@ const Menu = () => {
             </li>
           </ul>
         </nav>
-        <div class="nav-mobile-menu">
+        <div
+          className={
+            menuActive ? "active-nuv nav-mobile-menu" : "nav-mobile-menu"
+          }
+          onClick={() => setMenuActiv(!menuActive)}
+        >
           <span></span>
           <span></span>
           <span></span>

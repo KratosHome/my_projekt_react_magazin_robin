@@ -34,6 +34,7 @@
 .contact .telphone_number {
   font-size: 32.6px;
 }
+
 .like_basket {
   display: flex;
   justify-content: flex-end;
@@ -43,10 +44,7 @@
 .like_basket a {
   position: relative;
 }
-.basket img,
-.like img {
-  cursor: pointer;
-}
+
 /* omly tablet */
 @media (max-width: 768px) {
   .logo img {
@@ -86,11 +84,5 @@
   }
   .like_basket {
     margin-right: 155px;
-  }
-  .basket img,
-  .like img {
-    cursor: pointer;
-    max-width: 30px;
-    max-height: 30px;
   }
 }

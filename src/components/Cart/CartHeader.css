@@ -1,0 +1,57 @@
+.basket img,
+.like img {
+  cursor: pointer;
+}
+.bascet_caunt_border {
+  top: -60px;
+  left: 5px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(241, 176, 176);
+  border-radius: 50%;
+}
+
+.bascet_caunt {
+  top: -5px;
+  left: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  text-decoration: none;
+  color: rgb(72, 129, 96);
+}
+
+/* desctop */
+@media (max-width: 544px) {
+  .test {
+    top: -50px;
+    left: 0px;
+  }
+
+  .bascet_caunt {
+    top: -2px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .basket img,
+  .like img {
+    cursor: pointer;
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 547px) {
+  .bascet_caunt_border {
+    top: -49px;
+    left: 5px;
+  }
+
+  .bascet_caunt {
+    top: -2px;
+    left: 5px;
+  }
+}

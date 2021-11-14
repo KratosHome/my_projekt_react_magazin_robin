@@ -47,6 +47,23 @@
   background-size: contain;
   cursor: pointer;
 }
+.card_like_button {
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.card_like_border {
+  width: 50px;
+  margin: 0px 0px 0px 250px;
+  height: 30px;
+  background-size: contain;
+  align-content: space-between;
+  background: url(../../components/Cart/page_img/like_hoveer.png) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
 .card_name {
   margin: 20px 0px 0px 0px;
   text-align: center;
@@ -59,40 +76,13 @@
   text-align: center;
 }
 .card_content {
-  margin: 20px 0px 20px 0px;
+  margin-top: 3%;
   text-align: center;
   transform-origin: top;
   transition: 500ms;
   min-height: 50px;
   max-height: 50px;
-}
-.card_buttom {
-  margin: auto;
-  display: block;
-  width: 186px;
-  height: 55px;
-  border: none;
-  background-color: rgba(49, 25, 0, 0.7);
-  box-shadow: 8px -6px 0px 0px rgba(254, 254, 254, 0.44);
-  border-radius: 8px;
-  font-family: "Exo 2";
-  font-size: 25px;
-  line-height: 25px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.card_buttom:hover,
-.card_categori:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 0px 0px rgba(254, 254, 254, 0.44);
-  background-color: white;
-  color: #7c5f41;
-  border: 1px solid rgba(49, 25, 0, 0.7);
-}
-
-.card:hover .card_buttom {
-  transform: translate(1px, 10%);
+  margin-bottom: 29%;
 }
 .card:hover .card_content {
   transform: scaleY(1);
@@ -108,7 +98,7 @@
   }
   .card_buttom {
     transition: 500ms;
-    transform: translate(1px, -60%);
+    transform: translate(1px, -150%);
   }
 }
 
@@ -125,6 +115,9 @@
     height: 240px;
   }
   .card_like {
+    margin: 0px 0px 0px 200px;
+  }
+  .card_like_border {
     margin: 0px 0px 0px 200px;
   }
 }
