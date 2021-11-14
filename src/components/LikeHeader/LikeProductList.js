@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { keys } from "lodash";
 import productsArray, {
   getProductsObject,
@@ -7,7 +7,7 @@ import productsArray, {
 const LikeProductList = ({
   productsLikeState,
   productsObject = getProductsObject(productsArray),
-  LiketItem = LikeProductList,
+  LiketItem,
   changeProductQuantity,
 }) => {
   return (

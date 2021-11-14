@@ -41,6 +41,7 @@ const ProductPage = ({
               <img
                 class="product_page_img"
                 src={productsObject[pageId].img}
+                alt={productsObject[pageId].name}
               ></img>
             </div>
           </div>

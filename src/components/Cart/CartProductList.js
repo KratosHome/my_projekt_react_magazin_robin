@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { keys } from "lodash";
-import CartProductListItem from "./CartProductListItem";
 import productsArray, {
   getProductsObject,
 } from "../ProducctsList/productsArray";
@@ -8,7 +7,7 @@ import productsArray, {
 const CardProductList = ({
   productsInCard,
   productsObject = getProductsObject(productsArray),
-  CartItem = CartProductListItem,
+  CartItem,
   changeProductQuantity,
 }) => {
   return (
