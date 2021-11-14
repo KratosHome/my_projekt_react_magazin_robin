@@ -19,7 +19,7 @@ const LikeHeadeListExtended = ({ product, isLiked, addLike, removeLike }) => {
         <div class="card_categori">{product.category}</div>
         <Link to={`/products/${product.pageId}`}>
           <div class="card_img">
-            <img src={product.img} alt="" />
+            <img src={product.img} alt={product.name} />
           </div>
           <div class="card_name">{product.name}</div>
           <div class="card_prise">{product.price}грн</div>

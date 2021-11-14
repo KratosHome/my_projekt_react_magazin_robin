@@ -2,9 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import Quontity from "../Quontity/Quonttity";
 import "./CartProductListExtended.css";
-import productsArray, {
-  getProductsObject,
-} from "../../components/ProducctsList/productsArray";
 import Delete_img from "../../components/Cart/page_img/delete.png";
 
 const CartProductListExtended = ({
@@ -12,16 +9,12 @@ const CartProductListExtended = ({
   productCount,
   removeProductFromCart,
   changeProductQuantity,
-  productsObject = getProductsObject(productsArray),
 }) => {
-  {
-    console.log(product);
-  }
   return (
     <>
       <span class="cart_line" />
       <div class="card_Product">
-        <img class="cart_img" src={product.img}></img>
+        <img class="cart_img" src={product.img} alt={product.name}></img>
         <div>{product.name}</div>
         <div>{product.price} грн.</div>
         <Quontity

@@ -33,9 +33,9 @@ export default class SimpleSlider extends Component {
         />
 
         <Slider {...settings}>
-          <img src={bannerBubbleWafflee}></img>
-          <img src={lavazzaSekend}></img>
-          <img src={lavazza}></img>
+          <img src={bannerBubbleWafflee} alt="Banana Wafle"></img>
+          <img src={lavazzaSekend} alt="lavazzaSekend"></img>
+          <img src={lavazza} alt="lavazza"></img>
         </Slider>
       </div>
     );

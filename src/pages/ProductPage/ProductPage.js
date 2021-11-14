@@ -26,11 +26,13 @@ const ProductPage = ({
         <div class="container">
           <div class="product_page_flex">
             <div class="product_page_title">
-              <svg viewBox="0 0 1550 100">
-                <text class="h1_animation" x="40%" y="80%">
-                  {productsObject[pageId].name}
-                </text>
-              </svg>
+              <h1>
+                <svg viewBox="0 0 1550 100">
+                  <text class="h1_animation" x="40%" y="80%">
+                    {productsObject[pageId].name}
+                  </text>
+                </svg>
+              </h1>
               <h2 class="product_page_content">
                 Состав: {productsObject[pageId].content}
               </h2>

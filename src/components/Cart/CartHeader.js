@@ -10,7 +10,7 @@ const CardHeader = ({ productsInCard }) => {
     <>
       <div class="basket">
         <Link to="/cart">
-          <img src={basket} alt="Корзина" />
+          <img src={basket} alt="Корзина" alt="Корзина" />
           <div class="bascet_caunt_border">
             <div class="bascet_caunt">
               {keys(productsInCard).reduce(

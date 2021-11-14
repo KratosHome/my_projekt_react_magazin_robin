@@ -8,11 +8,14 @@ const AboutUsPage = () => {
   return (
     <>
       <div class="container test">
-        <svg viewBox="0 0 1550 100">
-          <text class="h1_animation_about_ass" x="35%" y="80%">
-            Про Robbin Bobbin
-          </text>
-        </svg>
+        <h1>
+          <svg viewBox="0 0 1550 100">
+            <text class="h1_animation_about_ass" x="35%" y="80%">
+              Про Robbin Bobbin
+            </text>
+          </svg>
+        </h1>
+
         <div class="about_ass_img_one">
           <img src={abaut_ass}></img>
         </div>

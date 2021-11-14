@@ -41,7 +41,7 @@ const ProducctsListItem = ({
         </button>
         <Link to={`/products/${pageId}`}>
           <div class="card_img">
-            <img src={img} alt="" />
+            <img src={img} alt={name} />
           </div>
           <div class="card_name">{name}</div>
           <div class="card_prise">{price}грн</div>
