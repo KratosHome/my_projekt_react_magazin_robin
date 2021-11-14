@@ -37,7 +37,7 @@ const Header = () => {
                   </div>
                 </div>
                 <div class="img_phone">
-                  <img src={phoneIcon} alt="Звони к нам)" />
+                  <img src={phoneIcon} alt="Звони к нам" />
                 </div>
               </div>
             </div>
