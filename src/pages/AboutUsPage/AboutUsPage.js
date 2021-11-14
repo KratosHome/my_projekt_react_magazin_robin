@@ -15,12 +15,11 @@ const AboutUsPage = () => {
             </text>
           </svg>
         </h1>
-
         <div class="about_ass_img_one">
-          <img src={abaut_ass}></img>
+          <img src={abaut_ass} alt="Pro Nass"></img>
         </div>
         <div class="about_ass_img_two">
-          <img src={abaut_ass_two}></img>
+          <img src={abaut_ass_two} alt="Pro Nass two"></img>
           <h2 class="about_ass_content">
             Ми раді вітати вас в нашому кафе robin bobbin і впевнені, що
             неодмінно сподобається. наш колектив зустріне вас щирою посмішкою та
