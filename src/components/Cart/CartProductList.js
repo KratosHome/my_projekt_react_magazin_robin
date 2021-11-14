@@ -12,14 +12,16 @@ const CardProductList = ({
 }) => {
   return (
     <>
-      {keys(productsInCard).map((productId) => (
-        <CartItem
-          key={productId}
-          product={productsObject[productId]}
-          productCount={productsInCard[productId]}
-          changeProductQuantity={changeProductQuantity}
-        />
-      ))}
+      {keys(productsInCard).map((productId) => {
+        return (
+          <CartItem
+            key={productId}
+            product={productsObject[productId]}
+            productCount={productsInCard[productId]}
+            changeProductQuantity={changeProductQuantity}
+          />
+        );
+      })}
     </>
   );
 };
