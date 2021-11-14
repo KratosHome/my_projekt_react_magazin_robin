@@ -10,7 +10,7 @@ const LikeHeader = ({ productsLikeState }) => {
     <>
       <div class="like">
         <Link to="/best-list">
-          <img src={like} alt="Избранное" alt="like" />
+          <img src={like} alt="like" />
           <div class="like_caunt_border">
             <div class="like_caunt">
               {keys(productsLikeState).reduce(
