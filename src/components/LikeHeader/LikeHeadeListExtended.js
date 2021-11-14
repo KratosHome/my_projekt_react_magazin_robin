@@ -38,6 +38,9 @@ const LikeHeadeListExtended = ({ product, isLiked, addLike, removeLike }) => {
     </>
   );
 };
+const mapStateToProps = (state) => ({
+  productsLikeState: state.productsLikeState,
+});
 
 const mapDispatchToProps = (dispatch) => ({
   addLike: (id) =>
@@ -52,4 +55,7 @@ const mapDispatchToProps = (dispatch) => ({
     }),
 });
 
-export default connect(null, mapDispatchToProps)(LikeHeadeListExtended);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LikeHeadeListExtended);

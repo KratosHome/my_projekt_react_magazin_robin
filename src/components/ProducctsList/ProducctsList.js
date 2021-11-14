@@ -40,7 +40,6 @@ export const ProducctsListBestList = () => {
             pageId,
           }) => (
             <ProducctsListItem
-              id={id}
               key={id}
               id={id}
               category={category}
